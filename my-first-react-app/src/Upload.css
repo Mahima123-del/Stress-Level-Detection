@@ -1,0 +1,58 @@
+.upload-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  input[type="file"] {
+    margin: 20px 0;
+  }
+
+  .upload-container input[type="file"] {
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+  }
+  
+  .upload-container h2 {
+    margin-top: 60px;
+    font-size: 48px; /* Increase as needed */
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .upload-container input[type="file"] {
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 15px;
+    
+  }
+  
+  .upload-container p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  

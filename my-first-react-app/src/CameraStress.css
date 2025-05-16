@@ -1,0 +1,129 @@
+/* General Page Style */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #6e7dff, #83a4d4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Container for the entire content */
+.camera-stress-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+/* Side Panels */
+.side-panel {
+    width: 20%;
+    min-width: 180px;
+    background-color: #ffffffdd;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+
+  
+.side-panel.left {
+  left: 0;
+  background: rgba(255, 99, 71, 0.8);
+  transform: rotate(-15deg);
+}
+
+.side-panel.right {
+  right: 0;
+  background: rgba(34, 193, 195, 0.8);
+  transform: rotate(15deg);
+}
+
+/* Hover effect to bring panels to normal */
+.side-panel:hover {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* Content Box */
+.content-box {
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  position: relative;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: #ff9800;
+}
+
+h4 {
+  color: #f44336;
+}
+
+h5 {
+  color: #28a745;
+}
+
+canvas {
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+canvas:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+video {
+  display: none;
+}
+
+/* Face Detected Message */
+h5.no-face {
+  color: #dc3545; /* Red */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .content-box {
+    padding: 20px;
+  }
+
+  h3, h4, h5 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

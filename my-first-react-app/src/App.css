@@ -1,0 +1,444 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #040609;
+  padding: 15px 70px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for "Level Detection" text */
+.orange-text {
+  color: rgb(255, 94, 0);
+  font-weight: bold;
+}
+
+
+/* Logo Styling */
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-left: 400px; /* Pushes links to the right */
+  gap: 30px;
+  padding: 0;
+}
+
+/* Navigation Link Styling */
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 21px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #f8f9fa;
+}
+
+
+/* Full-Screen Background Image */
+
+
+/* Title Text Styling */
+.hero-text {
+  font-size: 90nodepx;
+  font-weight: bold;
+  color: white; /* Ensures visibility */
+  text-shadow: 
+    3px 3px 10px rgba(0, 0, 0, 0.9), 
+    -3px -3px 10px rgba(0, 0, 0, 0.9),
+    5px 5px 15px rgba(0, 0, 0, 0.8); /* Increased multiple shadows */
+  max-width: 80%;
+  text-align: center;
+  z-index: 1; /* Keeps text above the image */
+}
+
+/* Base styles for the page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  height: 100vh;
+}
+
+/* Container to hold everything */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Center video and canvas container */
+.center-box {
+  position: relative;
+  text-align: center;
+  width: 70%;
+}
+
+
+
+/* Left side panel */
+.left {
+  margin-right: 20px;
+}
+
+/* Right side panel */
+.right {
+  margin-left: 20px;
+}
+
+/* Styling for images inside side panels */
+.side-panel img {
+  width: 300px;
+  height: 450px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for text in side panels */
+.side-panel h2 {
+  font-size: 1.5em;
+  color: #4c4c4c;
+  margin-bottom: 10px;
+}
+
+.side-panel p {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Styling for the canvas */
+canvas {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+/* Main title */
+h2 {
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Displaying stress level and emotion */
+h3, h4, h5 {
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+/* Container for result and face detection status */
+.result-status {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+/* Flexbox to align text and side panels properly */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+
+
+
+
+.page {
+  display: flex;
+  height: 100vh; /* full height of viewport */
+}
+
+
+.center-box {
+  width: 60%;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.side-panel {
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.side-panel {
+  width: 20%;
+  min-width: 180px;
+  background-color: #ffffffdd;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.side-panel p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.profile-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.profile-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+}
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 200px;
+  z-index: 100;
+}
+.profile-item {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Profile dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 240px;
+  padding: 15px;
+  z-index: 1000;
+  text-align: center
+}
+
+/* Profile icon styling */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffa500;
+}
+
+/* File input styling */
+input[type="file"] {
+  margin-top: 10px;
+}
+
+/* Other styling */
+.logout-btn {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #e69500;
+}
+
+/* Dropdown and Navbar general styles */
+.profile-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 200px;
+}
+
+.profile-item {
+  margin: 10px 0;
+}
+
+.profile-dropdown {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+.profile-photo-preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profile-preview-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffa500;
+}
+
+
+/* Hero Section with Gradient Overlay */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Overlay Content */
+.hero-overlay {
+  text-align: center;
+  color: #fff;
+  padding: 20px 50px;
+  max-width: 800px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+
+/* Text Fields */
+.profile-dropdown div {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+  text-align: left;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-heading {
+  font-size: 3.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffae42;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-welcome {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-top: 15px;
+}
+
+.profile-dropdown label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.profile-dropdown input[type="file"] {
+  width: 100%;
+  margin: 8px 0;
+  font-size: 14px;
+}
